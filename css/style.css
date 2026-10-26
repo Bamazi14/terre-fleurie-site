@@ -572,3 +572,38 @@
       }
     }
 
+.ferme-google {
+  text-align: center;
+  padding: 30px 20px;
+  margin: 25px auto;
+  max-width: 700px;
+  border-radius: 16px;
+  background: #f4f8f1;
+}
+
+.ferme-google h2 {
+  color: #286b3b;
+  margin-bottom: 12px;
+}
+
+.ferme-google p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.btn-google {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 13px 22px;
+  background: #286b3b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-google:hover {
+  background: #1c4e2b;
+}
+
