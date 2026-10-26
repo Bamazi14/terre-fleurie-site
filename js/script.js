@@ -56,14 +56,16 @@
       }
     );
 document.addEventListener("DOMContentLoaded", () => {
-  const bouton = document.querySelector(".btn-google");
+  const bouton = document.querySelector(".google-button");
 
-  if (bouton) {
-    bouton.addEventListener("click", () => {
-      console.log(
-        "Clic sur le lien Google de Ferme Terre Fleurie"
-      );
-    });
-  }
+  if (!bouton) return;
+
+  bouton.addEventListener("click", () => {
+    bouton.style.filter = "brightness(0.92)";
+
+    setTimeout(() => {
+      bouton.style.filter = "";
+    }, 180);
+  });
 });
 
