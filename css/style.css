@@ -603,7 +603,8 @@
 
 .maps-icon {
   display: block;
-  flex: 0 0 90px;
+  flex: 0 0 45px;
+  max-width: 45px;
 }
 
 .maps-icon svg {
@@ -653,7 +654,7 @@
   outline-offset: 5px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 35px) {
   .google-button {
     gap: 8px;
     padding: 14px 9px;
@@ -662,7 +663,7 @@
   }
 
   .maps-icon {
-    flex-basis: 58px;
+    flex-basis: 35px;
   }
 
   .button-text {
