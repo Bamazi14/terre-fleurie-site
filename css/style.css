@@ -601,16 +601,28 @@
   cursor: pointer;
 }
 
-.maps-icon {
-  display: block;
-  flex: 0 0 45px;
-  max-width: 45px;
+/* Taille du symbole sur PC */
+.google-button .maps-icon {
+  flex: 0 0 45px !important;
+  width: 45px !important;
+  max-width: 45px !important;
+  min-width: 0 !important;
 }
 
-.maps-icon svg {
+.google-button .maps-icon svg {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  max-width: 45px !important;
+  height: auto !important;
+}
+
+/* Taille du symbole sur téléphone */
+@media (max-width: 480px) {
+  .google-button .maps-icon {
+    flex-basis: 32px !important;
+    width: 32px !important;
+    max-width: 32px !important;
+  }
 }
 
 .button-text {
