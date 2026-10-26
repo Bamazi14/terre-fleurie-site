@@ -55,4 +55,15 @@
           "&body=" + encodeURIComponent(corps);
       }
     );
+document.addEventListener("DOMContentLoaded", () => {
+  const bouton = document.querySelector(".btn-google");
+
+  if (bouton) {
+    bouton.addEventListener("click", () => {
+      console.log(
+        "Clic sur le lien Google de Ferme Terre Fleurie"
+      );
+    });
+  }
+});
 
