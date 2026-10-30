@@ -691,3 +691,151 @@
   }
 }
 
+/* RUBRIQUE PARTENAIRES ET RESEAUX */
+
+.partners-section {
+  padding: 75px 20px;
+  background: #f3f8f1;
+}
+
+.partners-container {
+  max-width: 1150px;
+  margin: auto;
+  text-align: center;
+}
+
+.partners-label {
+  display: inline-block;
+  background: #dcefdc;
+  color: #216b37;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.partners-section h2 {
+  color: #216b37;
+  font-size: clamp(25px, 4vw, 36px);
+  margin: 20px 0;
+}
+
+.partners-intro {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.partners-section h3 {
+  color: #286b3b;
+  font-size: 25px;
+  margin: 35px 0 25px;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.partner-card {
+  background: white;
+  padding: 25px 18px;
+  border-radius: 16px;
+  border-bottom: 5px solid #31934c;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  transition: transform 0.3s;
+}
+
+.partner-card:hover {
+  transform: translateY(-6px);
+}
+
+.partner-card img {
+  width: 100%;
+  max-width: 220px;
+  height: 125px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.partner-card h4 {
+  color: #245e35;
+  font-size: 18px;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+
+.partner-card p {
+  color: #777;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.network-title {
+  margin-top: 55px !important;
+}
+
+.placeholder {
+  border: 2px dashed #c6d6c5;
+  border-bottom: 5px solid #e3a928;
+  background: #fffdf6;
+}
+
+.empty-logo {
+  width: 90px;
+  height: 90px;
+  border: 2px dashed #c4c4c4;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.partners-footer {
+  margin-top: 45px;
+  padding: 25px;
+  background: #286b3b;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .partners-section {
+    padding: 50px 12px;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .partner-card {
+    padding: 18px 9px;
+    min-height: 190px;
+  }
+
+  .partner-card img {
+    height: 100px;
+  }
+
+  .partner-card h4 {
+    font-size: 15px;
+  }
+
+  .partner-card p {
+    font-size: 12px;
+  }
+}
+
